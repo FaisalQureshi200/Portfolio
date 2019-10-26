@@ -278,6 +278,8 @@
     position: relative;
     padding-bottom: 10px;
     bottom: -90px;
+    width:50rem;
+    left:-18px;
     
   }
   .card-footer1{
@@ -285,12 +287,18 @@
     position: relative;
     padding-bottom: 10px;
     bottom: -90px;
+    height: 4rem;
+    width:50rem;
+    left:-18px;
   }
   .card-footer2{
     background-color: whitesmoke;
     position: relative;
     padding-bottom: 10px;
     bottom: -80px;
+    height: 4rem;
+    width:50rem;
+    left:-18px;
   }
   .edu-head{
     color: white;
@@ -367,24 +375,90 @@
     text-decoration: underline;
   }
   .project-card1{
-    width: 30rem;
-    height: 20rem;
+    width: 20rem;
+    height: 15rem;
     position: relative;
     left: 60px;
   }
-  .project-card2{
-    width: 30rem;
-    height: 20rem;
+  
+  .project1-img{
+    width:5rem;
+    height:5rem;
     position: relative;
-    left: 700px;
+    right:-75px;
+
+  }
+  .project1-link:link {
+    color:blue;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    left:70px;
+  }
+  .project1-link:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .project1-link:hover {
+    color: orangered;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .project1-footer{
+    color: wheat;
+    position: relative;
+    left:-18px;
+    width: 20rem;
+    height: 38px;
+    bottom: -10px;
+  }
+  .project-card2{
+    width: 20rem;
+    height: 15rem;
+    position: relative;
+    left: 500px;
     bottom:130px;
 
   }
-  .project-1{
-    color: rgb(20, 90, 20);
-    font-size: 30px;
-    text-align: center;
+
+  .project2-img{
+    width:5rem;
+    height:5rem;
+    position: relative;
+    right:-75px;
+
   }
+  .project2-link:link {
+    color:blue;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    left:75px;
+  }
+  .project2-link:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .project2-link:hover {
+    color: orangered;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .project2-footer{
+    color: white;
+    position: relative;
+    left:-18px;
+    width: 20rem;
+    height: 38px;
+    bottom: -10px;
+  }
+
   .article-1{
     position: relative;
     left:20px;
@@ -415,3 +489,4 @@
     font-size: 20px;
     left:10px;
   }
+  
