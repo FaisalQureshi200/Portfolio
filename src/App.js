@@ -1,26 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Navigation,Layout,Header,Drawer,Content} from 'react-mdl'
+import {Link} from 'react-router-dom'
+import Main from './main'
+import 'react-mdl/extra/material.css'
+import 'react-mdl/extra/material.js'
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import{MDBIcon} from 'mdbreact'
+class App extends React.Component {
+
+    render() {
+        return (
+            
+            <div className="demo-big-content">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+     
+                <Layout>
+                    <Header transparent    scroll>
+                        <Navigation style={{position:'relative',left:'250px'}}>
+                            <Link to="/">Home</Link>
+                            <Link to="/aboutme">AboutMe</Link>
+                            <Link to="/skills">Skills</Link>
+                            <Link to="/experience">Experience</Link>
+                            <Link to="/projects">Projects</Link>
+                            <Link to="/education">Education</Link>
+                            <Link to="/contact">Contact</Link>
+                            <Link to="/blog">Blog</Link>
+                        </Navigation>
+
+                    </Header>
+
+
+                    <Drawer>
+
+                        <Navigation>
+                            <Link to="/"><MDBIcon icon="home" className="red-text pr-3"  fixed />&ensp;Home</Link>
+                            <Link to="/aboutme"> <MDBIcon icon="user" className="green-text pr-3"  fixed /> &ensp;AboutMe</Link> 
+                            <Link to="/skills"><MDBIcon icon="signal" className="cyan-text pr-3"  fixed />&emsp;Skills</Link>
+                            <Link to="/experience"><MDBIcon icon="chart-line" className="red-text pr-3"  fixed />&emsp;Experience </Link>
+                            <Link to="/projects"><MDBIcon icon="folder" className="blue-text pr-3" fixed />&emsp;Projects</Link>
+                            <Link to="/education"><MDBIcon icon="graduation-cap" className="amber-text pr-3" fixed />&emsp; Education</Link>
+                            <Link to="/contact"><MDBIcon icon="envelope" className="brown-text pr-3" fixed />&emsp;Contact</Link>
+                            <Link to="/blog"><MDBIcon icon="newspaper" className="indigo-text pr-3" fixed />&emsp;Blog</Link>
+                        </Navigation>
+                    </Drawer>
+                    <Content>
+                        <div className="page-content" />
+                        <Main/>
+                    </Content>
+                </Layout>
+               
+            </div>
+        )
+    }
+
 }
-
-export default App;
+export default App
