@@ -33,21 +33,21 @@ class App extends React.Component {
                     </Header>
 
 
-                    <Drawer>
+                    <Drawer style={{backgroundColor:"#212f3d"}}>
 
                         <Navigation>
-                            <Link to="/"><MDBIcon icon="home" className="red-text pr-3"  fixed />&ensp;Home</Link>
-                            <Link to="/aboutme"> <MDBIcon icon="user" className="green-text pr-3"  fixed /> &ensp;AboutMe</Link> 
-                            <Link to="/skills"><MDBIcon icon="signal" className="cyan-text pr-3"  fixed />&emsp;Skills</Link>
-                            <Link to="/experience"><MDBIcon icon="chart-line" className="red-text pr-3"  fixed />&emsp;Experience </Link>
-                            <Link to="/projects"><MDBIcon icon="folder" className="blue-text pr-3" fixed />&emsp;Projects</Link>
-                            <Link to="/education"><MDBIcon icon="graduation-cap" className="amber-text pr-3" fixed />&emsp; Education</Link>
-                            <Link to="/contact"><MDBIcon icon="envelope" className="brown-text pr-3" fixed />&emsp;Contact</Link>
-                            <Link to="/blog"><MDBIcon icon="newspaper" className="indigo-text pr-3" fixed />&emsp;Blog</Link>
+                            <Link style={{color:"#ffff"}} to="/"><MDBIcon icon="home" className="red-text pr-3"  fixed />&ensp;Home</Link>
+                            <Link style={{color:"#ffff"}} to="/aboutme"> <MDBIcon icon="user" className="green-text pr-3"  fixed /> &ensp;AboutMe</Link> 
+                            <Link style={{color:"#ffff"}} to="/skills"><MDBIcon icon="signal" className="cyan-text pr-3"  fixed />&emsp;Skills</Link>
+                            <Link style={{color:"#ffff"}} to="/experience"><MDBIcon icon="chart-line" className="red-text pr-3"  fixed />&emsp;Experience </Link>
+                            <Link style={{color:"#ffff"}} to="/projects"><MDBIcon icon="folder" className="blue-text pr-3" fixed />&emsp;Projects</Link>
+                            <Link style={{color:"#ffff"}} to="/education"><MDBIcon icon="graduation-cap" className="amber-text pr-3" fixed />&emsp; Education</Link>
+                            <Link style={{color:"#ffff"}} to="/contact"><MDBIcon icon="envelope" className="brown-text pr-3" fixed />&emsp;Contact</Link>
+                            <Link style={{color:"#ffff"}} to="/blog"><MDBIcon icon="newspaper" className="indigo-text pr-3" fixed />&emsp;Blog</Link>
                         </Navigation>
                     </Drawer>
                     <Content>
-                        <div className="page-content" />
+                         
                         <Main/>
                     </Content>
                 </Layout>
