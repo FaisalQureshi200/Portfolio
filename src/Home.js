@@ -11,7 +11,7 @@ class Home extends React.Component{
    <Content>
     <div className="page-content" />
     <Fade bottom>  
-    <h1  transparent title="Title" style={{color: 'white',fontSize:'50px'}}>
+    <h1  transparent  style={{color: 'white',fontSize:'50px'}}>
                   <br/>
                   <br/>
                   <br/>

@@ -1,4 +1,23 @@
-
+@media (max-width: 767px) {
+  .column-1,
+  .column-2 {
+      width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .column-1 {
+      width: 50%;
+  }
+  .column-2 {
+      width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .column-2,
+  .column-1 {
+      width: 33%;
+  }
+}
 .grid-1{
   background: #c0392b; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #c0392b, #8e44ad); /* Chrome 10-25, Safari 5.1-6 */
